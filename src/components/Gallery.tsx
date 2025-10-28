@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
+import gallery1 from "@/assets/gallery-farm-house.jpg";
+import gallery2 from "@/assets/gallery-community.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
@@ -12,14 +12,19 @@ const Gallery = () => {
 
   const galleryImages = [
     {
+      src: gallery6,
+      title: "Kid Shine Global Pre-School",
+      description: "Elegant Global Pre-School with roof Tiles and  river pebbles and cobblestone pathways",
+    },
+    {
       src: gallery1,
       title: "Luxury Farmhouse Construction",
-      description: "Complete stone and tile work with modern rustic design",
+      description: "Complete tile work with modern rustic design",
     },
     {
       src: gallery2,
-      title: "Modern Wall Cladding",
-      description: "Contemporary architecture with elegant stone facade",
+      title: "Luxury Community",
+      description: "Contemporary architecture with elegant Roof tile",
     },
     {
       src: gallery3,
@@ -36,11 +41,7 @@ const Gallery = () => {
       title: "Premium Floor Tiles",
       description: "Modern residential flooring with high-quality tiles in outdoor patio",
     },
-    {
-      src: gallery6,
-      title: "Kid Shine Global Pre-School",
-      description: "Elegant Global Pre-School with roof Tiles and  river pebbles and cobblestone pathways",
-    },
+    
   ];
 
   return (
