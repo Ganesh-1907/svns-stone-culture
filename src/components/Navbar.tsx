@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-2">
             <h1 className="text-2xl md:text-3xl font-bold text-gradient">
-              STONE CULTURE
+              SVNS
             </h1>
           </div>
 
