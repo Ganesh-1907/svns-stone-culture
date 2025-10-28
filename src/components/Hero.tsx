@@ -25,12 +25,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/70"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-fade-in-up">
+      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto animate-fade-in-up">
         <div className="mb-8">
-          <h1 className="font-cursive text-5xl md:text-7xl lg:text-8xl mb-4 text-primary-foreground">
+          <h1 className="font-cursive text-5xl md:text-7xl lg:text-7xl mb-4 text-primary-foreground">
             STONE CULTURE BY
           </h1>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight">
+          <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-primary-foreground leading-tight">
             SRI VIJAYALAKSHMI NATURAL STONES (SVNS)
           </h2>
         </div>

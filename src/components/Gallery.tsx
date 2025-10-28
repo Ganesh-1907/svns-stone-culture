@@ -5,7 +5,7 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery6 from "../assets/gallery-school.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -38,8 +38,8 @@ const Gallery = () => {
     },
     {
       src: gallery6,
-      title: "Decorative Pebbles Landscaping",
-      description: "Elegant villa garden with river pebbles and cobblestone pathways",
+      title: "Kid Shine Global Pre-School",
+      description: "Elegant Global Pre-School with roof Tiles and  river pebbles and cobblestone pathways",
     },
   ];
 

@@ -31,6 +31,10 @@ const Brands = () => {
     { name: "Natural Stones", tagline: "Nature's Best" },
     { name: "Clay Roof Tiles", tagline: "Durable & Eco-Friendly" },
     { name: "Wirecut Bricks", tagline: "Modern Architecture" },
+    { name: "Terracotta Jalis", tagline: "Traditional Elegance" },
+    { name: "Natural Stones", tagline: "Nature's Best" },
+    { name: "Clay Roof Tiles", tagline: "Durable & Eco-Friendly" },
+    { name: "Wirecut Bricks", tagline: "Modern Architecture" },
   ];
 
   return (

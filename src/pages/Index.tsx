@@ -18,7 +18,7 @@ const Index = () => {
       <About />
       <Products />
       <TileVarieties />
-      <PriceRange />
+      {/* <PriceRange /> */}
       <Brands />
       <Gallery />
       <Services />

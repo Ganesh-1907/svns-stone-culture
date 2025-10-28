@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+91 9989547899", "+91 8919581753", "+91 7816087488"],
+      details: ["+91 9989547899", "+91 8919581753"],
     },
     {
       icon: Mail,
@@ -139,7 +139,7 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="flex items-start space-x-4 p-6 bg-card rounded-xl card-elegant"
+                className="flex items-start space-x-4 p-3 bg-card rounded-xl card-elegant"
               >
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -158,7 +158,7 @@ const Contact = () => {
             ))}
 
             {/* Social Media */}
-            <div className="p-6 bg-card rounded-xl card-elegant">
+            {/* <div className="p-6 bg-card rounded-xl card-elegant">
               <h3 className="font-bold text-lg mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <a
@@ -192,13 +192,13 @@ const Contact = () => {
                   <Phone size={20} />
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Proprietor Info */}
-            <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl">
+            {/* <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl">
               <h3 className="font-bold text-lg mb-2">Proprietor</h3>
               <p className="text-xl font-semibold text-primary">Ganesh Bora</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
