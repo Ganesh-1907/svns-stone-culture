@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import roofTiles from "@/assets/roof-tiles.jpg";
 import floorTiles from "@/assets/floor-tiles.jpg";
@@ -11,45 +10,29 @@ const Products = () => {
     {
       name: "Roof Tiles",
       image: roofTiles,
-      description: "MONIER Roofing Tiles, Terracotta Jalis, Clay & Glass Roof Tiles",
-      dimensions: "Various sizes available",
-      priceRange: "₹45 - ₹120 per tile",
+      description: "MONIER Roofing Tiles, Terracotta Jalis, Clay & Glass Roof Tiles for durable and elegant roofing solutions",
     },
     {
       name: "Floor Tiles",
       image: floorTiles,
-      description: "Premium floor tiles, Kota stones, All types of flooring solutions",
-      dimensions: "12x12, 16x16, 24x24 inches",
-      priceRange: "₹30 - ₹200 per sq.ft",
+      description: "Premium floor tiles, Kota stones, and all types of flooring solutions for residential and commercial spaces",
     },
     {
       name: "Wall Claddings",
       image: wallCladding,
-      description: "Natural stone claddings, Wirecut bricks, Modern facade solutions",
-      dimensions: "Custom sizes",
-      priceRange: "₹60 - ₹250 per sq.ft",
+      description: "Natural stone claddings, Wirecut bricks, and modern facade solutions for stunning architectural designs",
     },
     {
       name: "Natural Stones",
       image: naturalStones,
-      description: "Slate stones, Random stones, Tandoor stones, Kota stones",
-      dimensions: "Various sizes",
-      priceRange: "₹40 - ₹180 per sq.ft",
+      description: "Slate stones, Random stones, Tandoor stones, and Kota stones for authentic and timeless aesthetics",
     },
     {
       name: "Pebbles & Cobbles",
       image: pebbles,
-      description: "River pebbles, Cobble stones, All types of decorative pebbles",
-      dimensions: "20mm to 100mm",
-      priceRange: "₹25 - ₹80 per kg",
+      description: "River pebbles, Cobble stones, and all types of decorative pebbles for landscaping and pathways",
     },
   ];
-
-  const handleGetQuote = (productName: string) => {
-    const message = `Hi, I would like to get a quote for ${productName}. Please provide details.`;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=917816087488&text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
-  };
 
   return (
     <section id="products" className="py-20 bg-background">
@@ -82,22 +65,8 @@ const Products = () => {
                   {product.name}
                 </h3>
               </div>
-              <CardContent className="p-6 space-y-4">
-                <p className="text-foreground/80">{product.description}</p>
-                <div className="flex justify-between items-center text-sm">
-                  <span className="text-muted-foreground">{product.dimensions}</span>
-                </div>
-                <div className="pt-2 border-t">
-                  <p className="text-lg font-bold text-primary mb-4">
-                    {product.priceRange}
-                  </p>
-                  <Button
-                    onClick={() => handleGetQuote(product.name)}
-                    className="w-full btn-glow"
-                  >
-                    Get Quote
-                  </Button>
-                </div>
+              <CardContent className="p-6">
+                <p className="text-foreground/80 leading-relaxed">{product.description}</p>
               </CardContent>
             </Card>
           ))}

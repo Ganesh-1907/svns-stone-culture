@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Products from "@/components/Products";
+import TileVarieties from "@/components/TileVarieties";
 import PriceRange from "@/components/PriceRange";
 import Brands from "@/components/Brands";
 import Gallery from "@/components/Gallery";
@@ -16,6 +17,7 @@ const Index = () => {
       <Hero />
       <About />
       <Products />
+      <TileVarieties />
       <PriceRange />
       <Brands />
       <Gallery />

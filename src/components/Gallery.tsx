@@ -3,6 +3,9 @@ import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -22,6 +25,21 @@ const Gallery = () => {
       src: gallery3,
       title: "Premium Roof Tile Installation",
       description: "Terracotta roof tiles on modern villa with expert installation",
+    },
+    {
+      src: gallery4,
+      title: "Elegant Stone Cladding",
+      description: "Beautiful farmhouse with natural stone wall cladding and pathway",
+    },
+    {
+      src: gallery5,
+      title: "Premium Floor Tiles",
+      description: "Modern residential flooring with high-quality tiles in outdoor patio",
+    },
+    {
+      src: gallery6,
+      title: "Decorative Pebbles Landscaping",
+      description: "Elegant villa garden with river pebbles and cobblestone pathways",
     },
   ];
 

@@ -1,54 +1,71 @@
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Card, CardContent } from "@/components/ui/card";
+import { IndianRupee } from "lucide-react";
 
 const PriceRange = () => {
   const priceData = [
     {
       category: "Roof Tiles",
       dimensions: "Standard Size",
-      priceRange: "₹45 - ₹120 per tile",
+      minPrice: "45",
+      maxPrice: "120",
       unit: "Per Tile",
+      icon: "🏠",
     },
     {
       category: "Floor Tiles",
       dimensions: "12x12 inches",
-      priceRange: "₹30 - ₹80 per sq.ft",
+      minPrice: "30",
+      maxPrice: "80",
       unit: "Per Sq.Ft",
+      icon: "⬜",
     },
     {
       category: "Floor Tiles",
       dimensions: "24x24 inches",
-      priceRange: "₹60 - ₹150 per sq.ft",
+      minPrice: "60",
+      maxPrice: "150",
       unit: "Per Sq.Ft",
+      icon: "⬜",
     },
     {
       category: "Wall Cladding",
       dimensions: "Custom sizes",
-      priceRange: "₹60 - ₹250 per sq.ft",
+      minPrice: "60",
+      maxPrice: "250",
       unit: "Per Sq.Ft",
+      icon: "🧱",
     },
     {
       category: "Kota Stone",
       dimensions: "Various sizes",
-      priceRange: "₹35 - ₹90 per sq.ft",
+      minPrice: "35",
+      maxPrice: "90",
       unit: "Per Sq.Ft",
+      icon: "🪨",
     },
     {
       category: "Natural Stones",
       dimensions: "Slate/Random",
-      priceRange: "₹40 - ₹180 per sq.ft",
+      minPrice: "40",
+      maxPrice: "180",
       unit: "Per Sq.Ft",
+      icon: "🪨",
     },
     {
       category: "River Pebbles",
       dimensions: "20-40mm",
-      priceRange: "₹25 - ₹50 per kg",
+      minPrice: "25",
+      maxPrice: "50",
       unit: "Per Kg",
+      icon: "⚪",
     },
     {
       category: "Cobble Stones",
       dimensions: "50-100mm",
-      priceRange: "₹40 - ₹80 per kg",
+      minPrice: "40",
+      maxPrice: "80",
       unit: "Per Kg",
+      icon: "🔵",
     },
   ];
 
@@ -65,40 +82,51 @@ const PriceRange = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto bg-card rounded-xl shadow-lg overflow-hidden animate-fade-in">
-          <div className="overflow-x-auto">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-primary/10">
-                  <TableHead className="font-bold text-foreground">Product Category</TableHead>
-                  <TableHead className="font-bold text-foreground">Dimensions</TableHead>
-                  <TableHead className="font-bold text-foreground">Price Range</TableHead>
-                  <TableHead className="font-bold text-foreground">Unit</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {priceData.map((item, index) => (
-                  <TableRow
-                    key={index}
-                    className="hover:bg-muted/50 transition-colors"
-                  >
-                    <TableCell className="font-medium">{item.category}</TableCell>
-                    <TableCell>{item.dimensions}</TableCell>
-                    <TableCell className="text-primary font-semibold">
-                      {item.priceRange}
-                    </TableCell>
-                    <TableCell className="text-muted-foreground">{item.unit}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
+          {priceData.map((item, index) => (
+            <Card
+              key={index}
+              className="card-elegant overflow-hidden animate-fade-in hover-scale"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <CardContent className="p-6">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-2 text-foreground">
+                  {item.category}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {item.dimensions}
+                </p>
+                <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg p-4 mb-3">
+                  <div className="flex items-baseline justify-center gap-2 mb-1">
+                    <IndianRupee className="text-primary" size={20} />
+                    <span className="text-3xl font-bold text-primary">
+                      {item.minPrice}
+                    </span>
+                    <span className="text-xl text-muted-foreground">-</span>
+                    <span className="text-3xl font-bold text-primary">
+                      {item.maxPrice}
+                    </span>
+                  </div>
+                  <p className="text-xs text-center text-muted-foreground">
+                    {item.unit}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
 
-          <div className="p-6 bg-primary/5 border-t">
-            <p className="text-center text-sm text-muted-foreground">
-              * Prices are indicative and may vary based on quantity, location, and current market rates.
-              <br />
-              Contact us for accurate quotations and bulk order discounts.
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 border border-primary/10 animate-fade-in">
+          <div className="text-center">
+            <h3 className="text-xl font-bold mb-4 text-foreground">
+              📋 Important Pricing Information
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              Prices are indicative and may vary based on quantity, location, and current market rates.
+            </p>
+            <p className="text-primary font-semibold">
+              💰 Contact us for accurate quotations and special bulk order discounts
             </p>
           </div>
         </div>
