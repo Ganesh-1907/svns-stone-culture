@@ -55,9 +55,8 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
-          <p className="text-primary-foreground/80">
-            © {new Date().getFullYear()} STONE CULTURE BY SRI VIJAYALAKSHMI NATURAL
-            STONES (SVNS). All rights reserved.
+          <p className="text-gradient">
+            © {new Date().getFullYear()} STONE CULTURE BY SVNS. All rights reserved. | Developed by Build Your Vision
           </p>
         </div>
       </div>
