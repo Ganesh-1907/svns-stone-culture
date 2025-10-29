@@ -17,12 +17,12 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-6">
+            <p className="text-lg md:text-xl leading-relaxed mb-6 text-primary">
               At <span className="font-bold text-primary">STONE CULTURE BY SRI VIJAYALAKSHMI NATURAL STONES (SVNS)</span>, 
               we bring elegance and strength to your spaces through premium tiles and stones. With a passion for quality, 
               we supply the finest roofing, cladding, and flooring materials along with reliable installation and delivery services.
             </p>
-            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
+            <p className="text-lg md:text-xl  leading-relaxed text-primary">
               We serve across <span className="font-semibold text-accent">Telangana and Andhra Pradesh</span> with a commitment 
               to excellence. As authorized dealers of MONIER ROOFING TILES and suppliers of premium natural stones, 
               terracotta jalis, and all types of construction materials, we have built a reputation for trust, quality, 
