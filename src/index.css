@@ -1,11 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Tangerine:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
 
 @layer base {
   :root {
@@ -18,16 +13,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 25 15% 20%;
 
-    --primary: 15 75% 55%;
+    /* 🌿 Primary (Your Olive Green #98A869 = hsl(74 25% 53%)) */
+    --primary: 74 25% 53%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 25 8% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 10% 92%;
+    --muted: 0 0% 98%;
     --muted-foreground: 25 5% 45%;
 
-    --accent: 5 65% 50%;
+    --accent: 74 30% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -35,37 +31,45 @@ All colors MUST be HSL.
 
     --border: 25 15% 88%;
     --input: 25 15% 88%;
-    --ring: 15 75% 55%;
+    --ring: 74 25% 53%;
 
     --radius: 0.75rem;
-    
-    --terracotta: 15 75% 55%;
-    --brick-red: 5 65% 50%;
+
+    /* 🌿 Unified Olive Theme Colors */
+    --olive-light: 74 25% 63%;
+    --olive-medium: 74 25% 53%;
+    --olive-dark: 74 25% 35%;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(var(--olive-light)),
+      hsl(var(--olive-medium))
+    );
+
+    --gradient-hero: linear-gradient(
+      180deg,
+      hsl(var(--olive-dark) / 0.7),
+      hsl(74 20% 25% / 0.4)
+    );
+
+    /* Neutral shades */
     --stone-grey: 25 8% 45%;
     --stone-light: 30 10% 92%;
-    
-    --gradient-primary: linear-gradient(135deg, hsl(15 75% 55%), hsl(5 65% 50%));
-    --gradient-hero: linear-gradient(180deg, hsl(25 15% 20% / 0.7), hsl(25 15% 20% / 0.4));
-    
-    --shadow-elegant: 0 10px 40px -10px hsl(15 75% 55% / 0.25);
+
+    /* 🌿 Shadows adapted to olive theme */
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--olive-medium) / 0.25);
     --shadow-card: 0 4px 20px -4px hsl(25 15% 20% / 0.1);
-    
+
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -79,7 +83,8 @@ All colors MUST be HSL.
     --popover: 25 15% 15%;
     --popover-foreground: 30 10% 95%;
 
-    --primary: 15 75% 55%;
+    /* 🌿 Dark mode primary to your olive tone */
+    --primary: 74 25% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 25 8% 25%;
@@ -88,7 +93,7 @@ All colors MUST be HSL.
     --muted: 25 8% 25%;
     --muted-foreground: 30 10% 70%;
 
-    --accent: 5 65% 50%;
+    --accent: 74 25% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -96,10 +101,9 @@ All colors MUST be HSL.
 
     --border: 25 8% 25%;
     --input: 25 8% 25%;
-    --ring: 15 75% 55%;
+    --ring: 74 25% 45%;
   }
 }
-
 
 @layer base {
   * {
@@ -110,40 +114,41 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
   }
-  
+
   .font-cursive {
     font-family: 'Tangerine', cursive;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
 }
 
 @layer utilities {
+  /* 🌿 Updated text gradient to olive tones */
   .text-gradient {
-    @apply bg-gradient-to-r from-[hsl(var(--terracotta))] to-[hsl(var(--brick-red))] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[hsl(var(--olive-light))] to-[hsl(var(--olive-medium))] bg-clip-text text-transparent;
   }
-  
+
   .btn-glow {
     box-shadow: 0 0 20px hsl(var(--primary) / 0.5);
     transition: var(--transition-smooth);
   }
-  
+
   .btn-glow:hover {
     box-shadow: 0 0 30px hsl(var(--primary) / 0.7);
     transform: translateY(-2px);
   }
-  
+
   .card-elegant {
     box-shadow: var(--shadow-card);
     transition: var(--transition-smooth);
   }
-  
+
   .card-elegant:hover {
     box-shadow: var(--shadow-elegant);
     transform: translateY(-4px);

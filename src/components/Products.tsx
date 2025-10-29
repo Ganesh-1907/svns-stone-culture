@@ -35,7 +35,7 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-background">
+    <section id="products" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">

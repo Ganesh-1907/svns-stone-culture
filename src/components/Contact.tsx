@@ -74,7 +74,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
@@ -204,7 +204,7 @@ const Contact = () => {
 
         {/* Google Map */}
         <div className="mt-16 animate-fade-in">
-          <h3 className="text-2xl font-bold text-center mb-8">Find Us Here</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-gradient ">Find Us Here</h3>
           <div className="rounded-xl overflow-hidden shadow-lg h-[400px]">
             <iframe
               src="https://www.google.com/maps?q=17.4443683624268,78.3621139526367&output=embed"
