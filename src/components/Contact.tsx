@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -50,6 +50,13 @@ const Contact = () => {
       setIsSubmitting(false);
     }
   };
+
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent("Hi! I'm interested in booking a room at Zanu Sunidhi Guest Inn.");
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=919989547899&text=${message}`;
+  window.open(whatsappUrl, "_blank");
+  };
+
 
   const contactInfo = [
     {
@@ -133,6 +140,14 @@ const Contact = () => {
               </Button>
             </form>
           </div>
+
+          <button
+        onClick={handleWhatsApp}
+        className="fixed bottom-8 right-8 bg-[#25D366] hover:bg-[#20BA5A] text-white p-4 rounded-full shadow-lg z-50 transition-all hover:scale-110 animate-float"
+        aria-label="Contact via WhatsApp"
+      >
+        <MessageCircle className="w-6 h-6" />
+      </button>
 
           {/* Contact Info */}
           <div className="space-y-8 animate-slide-in-right">

@@ -109,7 +109,7 @@ const TileVarieties = () => {
             Contact us for detailed specifications, pricing, and availability
           </p>
           <a
-            href="https://wa.me/917816087488"
+            href="https://wa.me/919989547899"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors btn-glow"

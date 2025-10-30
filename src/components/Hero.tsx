@@ -22,10 +22,10 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/50 to-foreground/140"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto animate-fade-in-up">
+      <div className="relative z-10 text-center px-4 max-w-7xl mx-auto animate-fade-in-up pt-20">
         <div className="mb-8">
           <h1 className="font-cursive text-5xl md:text-7xl lg:text-7xl mb-4 text-primary-foreground">
             STONE CULTURE BY
@@ -42,7 +42,7 @@ const Hero = () => {
         <Button
           onClick={scrollToProducts}
           size="lg"
-          className="btn-glow text-lg px-8 py-6 rounded-full"
+          className="text-lg px-8 py-6 rounded-full"
         >
           Explore Products
         </Button>
@@ -53,7 +53,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background/80 to-transparent"></div>
     </section>
   );
 };
