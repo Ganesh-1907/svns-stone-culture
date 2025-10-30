@@ -30,7 +30,7 @@ const Contact = () => {
 
       // Create WhatsApp message
       const message = `Name: ${validated.name}\nPhone: ${validated.phone}\nMessage: ${validated.message}`;
-      const whatsappUrl = `https://api.whatsapp.com/send?phone=917816087488&text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=919989547899&text=${encodeURIComponent(message)}`;
 
       // Open WhatsApp
       window.open(whatsappUrl, "_blank");
@@ -52,8 +52,8 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Hi! I'm interested in booking a room at Zanu Sunidhi Guest Inn.");
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=919989547899&text=${message}`;
+    const message = `Hi! I want more informatiON about SVNS`
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=919989547899&text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, "_blank");
   };
 
@@ -198,7 +198,7 @@ const Contact = () => {
                   <Youtube size={20} />
                 </a>
                 <a
-                  href="https://wa.me/917816087488"
+                  href="https://wa.me/919989547899"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all"
