@@ -31,10 +31,16 @@ const Brands = () => {
     { name: "Natural Stones", tagline: "Nature's Best" },
     { name: "Clay Roof Tiles", tagline: "Durable & Eco-Friendly" },
     { name: "Wirecut Bricks", tagline: "Modern Architecture" },
-    { name: "Terracotta Jalis", tagline: "Traditional Elegance" },
-    { name: "Natural Stones", tagline: "Nature's Best" },
-    { name: "Clay Roof Tiles", tagline: "Durable & Eco-Friendly" },
-    { name: "Wirecut Bricks", tagline: "Modern Architecture" },
+    { name: "Wall Claddings", tagline: "Stylish Wall Finishes" },
+    { name: "Floor Tiles", tagline: "Elegance Beneath Your Feet" },
+    { name: "Ceiling Tiles", tagline: "Aesthetic Overhead Designs" },
+    { name: "Glass Roof Tiles", tagline: "Transparent Beauty with Strength" },
+    { name: "River Pebbles", tagline: "Smooth Natural Decor" },
+    { name: "Cobble Stones", tagline: "Timeless Outdoor Charm" },
+    { name: "Kota Stones", tagline: "Classic Indian Flooring Stone" },
+    { name: "Tandoor Stones", tagline: "Rustic Natural Appeal" },
+    { name: "Random Stones", tagline: "Unmatched Natural Patterns" },
+    { name: "Slate Stones", tagline: "Elegant Textured Finish" },
   ];
 
   return (
