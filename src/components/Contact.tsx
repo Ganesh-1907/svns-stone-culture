@@ -52,7 +52,7 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = `Hi! I want more informatiON about SVNS`
+  const message = `Hello SVNS! 🌿 I came across your range of tiles and natural stones — they look amazing! I'd love to know more about your products and offers.`;
   const whatsappUrl = `https://api.whatsapp.com/send?phone=919989547899&text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, "_blank");
   };
